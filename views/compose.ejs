@@ -1,0 +1,77 @@
+<%- include("partials/header"); -%>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
+
+<div class="bdy">
+
+<div class="container">
+
+<div class="box">
+
+
+  <form class="item" action="/compose" method="post">
+    <h3>Create A Blog Post</h3>
+    <div class="">
+      Please submit your guest blog posts by using the fields below.
+    </div>
+    <div>
+
+
+      <div>
+
+          <label for=""> Name <span>*</span></label>
+            </div>
+          <input id="" class= "form-input " type="text"  name="PostBy" value="" required>
+          </div>
+
+          <div>
+
+            <div>
+
+                <label for="fid">Post Title <span>*</span></label>
+                  </div>
+                <input id="fid" class= "form-input " type="text" name="PostTitle" value="" required>
+                </div>
+
+                <div>
+
+
+<div >
+    <label for="fid">Post Content <span>*</span></label>
+</div>
+ <textarea name="BlogContent" rows="6" cols="80">The cat was playing in the garden.</textarea>
+
+    </div>
+
+    <div>
+<div >
+    <label for="fid"> Category <span>*</span></label>
+</div>
+    <select class= "form-input " name="Category">
+      <option value="1">Web Design</option>
+      <option value="HTML">HTML</option>
+      <option value="CSS">CSS</option>
+      <option value="4">App Development</option>
+      <option value="5">Java Script</option>
+    </select>
+    </div>
+
+    <button class=" btnsub btn-lg" type="submit" name="list" >Publish</button>
+  </form>
+</div>
+</div>
+</div>
+<!-- Bootstrap core JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+
+</script>
+
+
+<%- include("partials/footer"); -%>
+
+<script>
+   $("footer").addClass("cfooter");
+</script>
+</html>
